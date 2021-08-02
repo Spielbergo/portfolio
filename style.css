@@ -33,12 +33,18 @@ time, mark, audio, video, button {
 	vertical-align: baseline;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--text-color);
     background-color: var(--bg-color);
     font-family: 'Work Sans', sans-serif;
 }
 section {
+    max-width: 1280px;
+    margin: auto;
     padding-left: 20px;
     padding-right: 20px;
     overflow: hidden;
@@ -99,6 +105,8 @@ p {
 hr {
     width: 80%;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .center {
@@ -195,9 +203,14 @@ h2 {
 }
 
 /* -- ABOUT SECTION -- */
-.about-section {
+.about {
     position: relative;
     height: auto;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .about-text {
@@ -206,22 +219,22 @@ h2 {
 
 .about-img img {
     width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
-.about-container {
-    display: grid;
-    grid-template-columns: 1fr;
+/* -- RESUME -- */
+section.portfolio {
+    max-width: 1750px;
 }
 
-/* -- RESUME -- */
 .language-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 2rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 75px;
+    margin-bottom: 75px;
     /* text-shadow: 2px 3px 4px #837f7f; */
 }
 
@@ -341,6 +354,10 @@ h2 {
     display: block;
 }
 
+.portfolio hr {
+    width: 60%;
+}
+
 /* -- CONTACT SECTION -- */
 #contact h3 {
     text-align: center;
@@ -458,6 +475,11 @@ footer {
     }
 
     /* HEADER - MQ */
+    .header-text-container {
+        max-width: 46%;
+        padding-left: 270px;
+    }
+
     .header-img {
         height: 90vh;
     }
@@ -465,10 +487,30 @@ footer {
     /* ABOUT - MQ */
     .about-container {
         grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 75px 0;
+    }
+
+    .about-text {
+        padding-right: 25px;
+    }
+
+    /* RESUME - MQ */
+    .resume-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .resume-text {
+        padding-left: 50px;
     }
     
     /* CONTACT - MQ */
     .contact-container {
         grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 }
