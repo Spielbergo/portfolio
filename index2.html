@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scott Sutherland | Front End Developer</title>
+
+        <!-- SEO META TAGS -->
+        <meta name="title" content="Scott Sutherland | Front End Developer">
+        <meta name="description" content="Experienced Toronto Web Developer using HTML, CSS, JavaScript and more.">
+        <meta name="keywords" content="web developer, toronto">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Scott Sutherland">
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <!-- CSS STYLES -->
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Flying Birds -->
+        <!-- <link rel="stylesheet" href="assets/css/birds.css"> -->
+        <!-- Client Logos -->
+        <link rel="stylesheet" href="assets/css/logo-slider.css">
+        <!-- Main Style Sheet -->
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="style2.css">
+    </head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <ul id="navbarItems" class="navbar-items" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li class="nav-logo"><a href="index.html"><img src="assets/images/logo.png" alt="Scott Sutherland Logo" width="100" height="100"></a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#">Dev Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <hr class="nav-divider">
+            <div class="contact-icons">
+              <a href="#"><i class="fa fa-envelope"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-phone"></i></a>
+            </div>
+        </ul>
+        <div>
+          <button id="mobileToggle" class="mobile-toggle" onclick = "navToggle()"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <header>
+      <div class="header-text-container">
+        <!-- Flying Birds Animation -->
+        <!-- <div class="birds-container">
+          <div class="bird-container bird-container--one">
+              <div class="bird bird--one"></div>
+          </div>
+          
+          <div class="bird-container bird-container--two">
+              <div class="bird bird--two"></div>
+          </div>
+          
+          <div class="bird-container bird-container--three">
+              <div class="bird bird--three"></div>
+          </div>
+          
+          <div class="bird-container bird-container--four">
+              <div class="bird bird--four"></div>
+          </div>
+        </div> -->
+        <!-- Header Text -->
+        <h1>Scott Su<span style="position: relative; z-index: 998;">the</span>rland</h1>
+        <h2>Front End Developer</h2>
+        <p class="subtitle-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cumque at veritatis quibusdam deleniti commodi repellat.</p>
+        <div class="header-btns">
+          <button><i class="fab fa-linkedin"></i> Linkedin</button>
+          <button><i class="fab fa-github"></i> Github</button>
+        </div>
+      </div>
+      <!-- Header Images -->
+      <picture>
+        <!-- <source media="(max-width: 480px)" srcset="assets/images/header-img-480w.jpg">
+        <source media="(max-width: 1024px)" srcset="header-img-1024w.jpg">
+        <source media="(min-width: 1025px)" srcset="assets/images/header-img.jpg"> -->
+        <img class="header-img" src="assets/images/header-img.jpg" alt="Mountain scene with coniferous trees in the foreground and blurred out rocks and ocean in the background" width="1920" height="1080">
+      </picture>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about-section" class="about-section">
+      <h3>About <span>Me</span></h3>
+      <div class="about-container">
+        <div class="about-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero aliquam quis, harum, fugiat molestiae cupiditate, temporibus deleniti ducimus quibusdam eum qui modi praesentium! Placeat facilis et delectus deserunt laborum?</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas et, error provident non optio, sint autem soluta nisi nulla reiciendis doloribus, modi iure placeat incidunt molestias dignissimos in dolores dicta!</p>
+          <div class="marquee">
+            <ul class="marquee-content">
+              <li><i class="fab fa-github"></i></li>
+              <li><i class="fab fa-codepen"></i></li>
+              <li><i class="fab fa-free-code-camp"></i></li>
+              <li><i class="fab fa-dev"></i></li>
+              <li><i class="fab fa-react"></i></li>
+              <li><i class="fab fa-vuejs"></i></li>
+              <li><i class="fab fa-angular"></i></li>
+              <li><i class="fab fa-node"></i></li>
+              <li><i class="fab fa-wordpress"></i></li>
+              <li><i class="fab fa-aws"></i></li>
+              <li><i class="fab fa-docker"></i></li>
+              <li><i class="fab fa-android"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-img">
+          <picture>
+            <img src="assets/images/scott.jpg" width="500" height="250" alt="">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume-section" class="resume-section">
+      <div class="resume-container">
+          <h3>Res<span>ume</span></h3>
+          <div class="resume-img">                
+              
+          </div>
+          <div class="resume-text">
+              <p>RIGHT Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequatur ad labore officiis obcaecati soluta doloribus ab tempora, molestiae, error consequuntur voluptatibus officia nihil itaque, provident dolorem suscipit iure commodi!</p>
+              <p>LEFT Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sequi voluptas natus error id veritatis eius voluptate tenetur dolore quis unde ipsam voluptatem nesciunt, maxime a officia perspiciatis neque repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ab et officiis veniam! Illum facilis perferendis sequi omnis tempore sit iure esse, hic adipisci mollitia? Dolorem esse modi blanditiis animi! </p>
+              <p>LEFT Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sequi voluptas natus error id veritatis eius voluptate tenetur dolore quis unde ipsam voluptatem nesciunt, maxime a officia perspiciatis neque repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ab et officiis veniam! Illum facilis perferendis sequi omnis tempore sit iure esse, hic adipisci mollitia? Dolorem esse modi blanditiis animi! </p>
+              <ul class="language-list">
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3"></i></li>
+                <li><i class="fab fa-js"></i></li>
+                <li><i class="fab fa-wordpress"></i></li>
+                <li><i class="fab fa-node-js"></i></li>
+                <li><i class="fab fa-react"></i></li>
+              </ul>
+          </div>
+      </div>
+  </section>
+
+  <hr>
+    
+  <!-- Client List Divider -->
+  <!-- <hr>
+  <div class="client-list-container">
+      <div class="client-logo" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+          <img src="assets/images/logos/pvalogo-white.png" alt="PVA Conuslting Group Logo" title="PVA Conuslting Group" width="250" height="100">
+      </div>
+      <div class="client-logo" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
+          <img src="assets/images/logos/crocodilerock.png" alt="Crocodile Rock Logo" title="Crocodile Rock Nightclub and Restaurant" width="250" height="100">
+      </div>
+      <div class="client-logo" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+          <img src="assets/images/logos/uoft-white.png" alt="University of Toronto Logo" title="University of Toronto" width="250" height="100">
+      </div>
+      <div class="client-logo" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000">
+          <img src="assets/images/logos/organizethisto.png" alt="Organize This Organizers Logo" title="Organize This Organizers" width="250" height="100">
+      </div>
+      <div class="client-logo" data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000">
+          <img src="assets/images/logos/yopie.png" alt="Yopie Digital Marketing Logo" title="Yopie Digital Marketing" width="250" height="100">
+      </div>
+  </div>
+  <hr> -->
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="portfolio-section center">
+    <h3 data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">Some of my <span>projects</span></h3>
+    <p class="folio-subtitle" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">All Bootstrap examples were creasted with the help of templates</p>
+    <div class="terminal-logo center" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">><span class="blink">_</span></div>
+    <div class="folio-container">
+        <ul id="filterList" class="filter-list mb40" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000"> 
+            <li id="all" onclick="showAll()" class="folio-btn active">All</li>
+            <li onclick="showCategory('bootstrap')" class="folio-btn">Bootstrap</li>
+            <li onclick="showCategory('grid')" class="folio-btn">CSS Grid</li>
+            <li onclick="showCategory('javascipt')" class="folio-btn">JS</li>
+        </ul>
+        <div class="folio-item-container" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
+            <div class="folio-item bootstrap">
+                <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                <div class="folio-overlay">
+                    <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
+                    <a href="https://www.github.com" target="_blank" class="button"><i class="fa fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="folio-item grid">
+                <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-23.jpg" alt="">
+            </div>
+
+            <div class="folio-item bootstrap">
+                <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-9.jpg" alt="">
+            </div>
+
+            <div class="folio-item javascript">
+                <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-13.jpg" alt="">
+            </div>
+
+            <div class="folio-item bootstrap">
+                <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-3.jpg" alt="">
+            </div>
+
+            <div class="folio-item bootstrap">
+                <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                <div class="folio-overlay">
+                    <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
+                    <a href="https://www.github.com" target="_blank" class="button"><i class="fa fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="folio-item grid">
+                <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-23.jpg" alt="">
+            </div>
+
+            <div class="folio-item bootstrap">
+                <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-9.jpg" alt="">
+            </div>
+
+            <div class="folio-item grid">
+                <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-23.jpg" alt="">
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+      <h3>Contact <span>Me</span></h3>
+      <div class="contact-container">
+          <div class="contact-text">
+              <h4>Scott Sutherland</h4>
+              <p>Toronto, Ontario<br>Canada</p>
+              <a href="mailto:scott@webcheddar.ca"><i class="fa fa-envelope"></i> scott@webcheddar.ca</a><br>
+              <a href="tel:6473399475"><i class="fa fa-phone"></i> (647) 339-9475</a>
+          </div>
+          <div class="contact-form">
+              <form action="assets/php/contact-form.php" method="POST">
+                  <div class="half-width-input">
+                      <input type="text" placeholder="First Name">
+                      <input type="text" placeholder="Last Name">
+                  </div>
+                  <div class="full-width-input">
+                      <input type="email" placeholder="Email">
+                  </div>
+                  <div class="full-width-input">
+                      <textarea name="message" placeholder="Please type your message..." id="message" cols="30" rows="10"></textarea>
+                  </div>
+                  <div class="submit-btn">
+                    <button>Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <!-- Font Awesome -->
+  <!-- <script src="https://use.fontawesome.com/5efd771620.js"></script> -->
+
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
