@@ -10,7 +10,7 @@
         <meta name="title" content="Scott Sutherland | Front End Developer">
         <meta name="description" content="Experienced Toronto Web Developer using HTML, CSS, JavaScript and more.">
         <meta name="keywords" content="web developer, toronto">
-        <meta name="robots" content="index, follow">
+        <meta name="robots" content="noindex, nofollow">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="language" content="English">
         <meta name="author" content="Scott Sutherland">
@@ -55,7 +55,7 @@
     </nav>
 
     <!-- HEADER -->
-    <header>
+    <header class="section">
         <div class="header-text-container">
         <!-- Flying Birds Animation -->
         <!-- <div class="birds-container">
@@ -94,7 +94,7 @@
     </header>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="about">
+    <section id="about" class="section about">
         <div class="about-container">
             <div class="about-text">
                 <h3>About <span>Me</span></h3>
@@ -158,7 +158,7 @@
     </section>
 
     <!-- PORTFOLIO SECTION -->
-    <section id="portfolio" class="portfolio center">
+    <section id="portfolio" class="section portfolio center">
         <h3 data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">Some of my <span>projects</span></h3>
         <p class="folio-subtitle" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">All Bootstrap examples were creasted with the help of templates</p>
         <div class="terminal-logo center" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">><span class="blink">_</span></div>
@@ -170,56 +170,87 @@
                 <li onclick="showCategory('javascipt')" class="folio-btn">JS</li>
             </ul>
             <div class="folio-item-container" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
+
                 <div class="folio-item bootstrap">
-                    <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                    <img src="assets/images/folio/webcheddar.jpg" alt="Web Cheddar website screenshot" class="folio-image">
                     <div class="folio-overlay">
+                        <button href="#myModal1" class="modal-button"><i class="fa fa-globe"></i> Preview</button>
                         <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
-                        <a href="https://www.github.com" target="_blank" class="button"><i class="fa fa-github"></i> Code</a>
+                        <a href="https://github.com/Spielbergo/webcheddar" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
 
-                <div class="folio-item grid">
-                    <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-23.jpg" alt="">
-                </div>
-
                 <div class="folio-item bootstrap">
-                    <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-9.jpg" alt="">
-                </div>
-
-                <div class="folio-item javascript">
-                    <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-13.jpg" alt="">
-                </div>
-
-                <div class="folio-item bootstrap">
-                    <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-3.jpg" alt="">
-                </div>
-
-                <div class="folio-item bootstrap">
-                    <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                    <img src="assets/images/folio/uoft.jpg" alt="" class="folio-image">
                     <div class="folio-overlay">
                         <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
-                        <a href="https://www.github.com" target="_blank" class="button"><i class="fa fa-github"></i> Code</a>
+                        <a href="https://github.com/Spielbergo/webcheddar" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
 
-                <div class="folio-item grid">
-                    <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-23.jpg" alt="">
+                <div class="folio-item bootstrap">
+                    <img src="assets/images/folio/pva.jpg" alt="" class="folio-image">
+                    <div class="folio-overlay">
+                        <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/Spielbergo/webcheddar" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
+                    </div>
                 </div>
 
                 <div class="folio-item bootstrap">
-                    <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-9.jpg" alt="">
+                    <img src="assets/images/folio/jenjewell.jpg" alt="" class="folio-image">
+                    <div class="folio-overlay">
+                        <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/Spielbergo/webcheddar" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
+                    </div>
                 </div>
 
-                <div class="folio-item grid">
-                    <img src="https://webcheddar.ca/assets/img/portfolio/portfolio-details-23.jpg" alt="">
+                <div class="folio-item bootstrap">
+                    <img src="assets/images/folio/smash-pets.jpg" alt="" class="folio-image">
+                    <div class="folio-overlay">
+                        <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/Spielbergo/webcheddar" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
+                    </div>
                 </div>
+
+                <div class="folio-item bootstrap">
+                    <img src="assets/images/folio/rohutton.jpg" alt="" class="folio-image">
+                    <div class="folio-overlay">
+                        <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/Spielbergo/webcheddar" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+
+                <div class="folio-item bootstrap">
+                    <img src="assets/images/folio/organizethis.jpg" alt="" class="folio-image">
+                    <div class="folio-overlay">
+                        <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/Spielbergo/webcheddar" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+
+                <div class="folio-item bootstrap">
+                    <img src="assets/images/folio/realtorsonline.jpg" alt="" class="folio-image">
+                    <div class="folio-overlay">
+                        <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/Spielbergo/webcheddar" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+
+                <div class="folio-item bootstrap">
+                    <img src="assets/images/folio/webcheddar.jpg" alt="" class="folio-image">
+                    <div class="folio-overlay">
+                        <a href="https://www.webcheddar.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/Spielbergo/webcheddar" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+
             </div>
         </div>
         <hr>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact">
         <h3>Contact <span>Me</span></h3>
         <div class="contact-container">
             <div class="contact-text">
@@ -252,6 +283,22 @@
     <footer>
 
     </footer>
+
+    <!-- MODALS -->
+    <!-- Modal 01 -->
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+            <h3>Modal Footer</h3>
+        </div>
+        </div>
+    </div>
 
     <!-- SCRIPTS -->
     <!-- Animate On Scroll -->
