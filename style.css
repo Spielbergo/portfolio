@@ -501,6 +501,15 @@ section.portfolio {
     color: var(--text-color-2);
 }
 
+.contact-social-icons {
+    padding-top: 25px;
+}
+
+.contact-social-icons a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* Contact Section - FORM */
 .contact-form {
     margin-top: 50px;
@@ -586,21 +595,6 @@ footer {
     from {top:-100px; opacity:0}
     to {top:0; opacity:1}
 }
-
-/* The Close Button */
-/* .close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-} */
 
 .modal-body video,
 .modal-body img {
