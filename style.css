@@ -1,6 +1,7 @@
 :root {
     --text-color: #fff;
     --text-color-2: rgb(255, 0, 0);
+    --text-color-3: #222;
     --hover-color: rgb(255, 0, 0);
     --hover-color-2: #fff;
     --bg-color: #222;
@@ -56,7 +57,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
 }
 
 a:hover {
@@ -64,7 +65,8 @@ a:hover {
     transition: all 400ms ease-in-out;
 }
 
-button {
+button,
+.folio-overlay a {
     position: relative;
     width: 150px;
     color: var(--text-color);
@@ -77,7 +79,9 @@ button {
     cursor: pointer;
 }
 
-.button:hover {
+button:hover,
+.folio-overlay a:hover {
+    color: var(--hover-color);
     background-color: var(--btn-hover-bg);
 }
 
@@ -222,14 +226,11 @@ h2 {
 .about-img img {
     width: 100%;
     height: auto;
+    margin-bottom: 25px;
     object-fit: cover;
 }
 
 /* -- RESUME -- */
-section.portfolio {
-    max-width: 1750px;
-}
-
 .language-list {
     display: flex;
     flex-wrap: wrap;
@@ -247,7 +248,98 @@ section.portfolio {
 .language-list li:nth-child(5) {color: green;}
 .language-list li:nth-child(6) {color: skyblue;}
 
+/* Skills Bar */
+.u-center {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+  }
+  
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .skills p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .skill {
+    margin: 1em 0 .5em;
+    position: relative;
+    width: 35.5em;
+  }
+  
+  .skill__type {
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    width: 5em;
+  }
+  
+  .skill__outer-bar, .skill__inner-bar {
+    height: .5em;
+  }
+  
+  .skill__outer-bar {
+    margin-top: 1em;
+    background: #333;
+  }
+  
+  .skill__inner-bar {
+    animation: fillBar 1s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+  }
+  
+  .skill__inner-bar--100 {
+    width: 100%;
+    background: var(--text-color-2);
+  }
+  
+  .skill__inner-bar--90 {
+    width: 90%;
+    background: var(--text-color-2);
+  }
+  
+  .skill__inner-bar--80 {
+    width: 80%;
+    background: var(--text-color-2);
+  }
+  
+  .skill__inner-bar--70 {
+    width: 80%;
+    background: var(--text-color-2);
+  }
+  
+  .skill__inner-bar--60 {
+    width: 90%;
+    background: var(--text-color-2);
+  }
+  
+  @keyframes fillBar {
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .resume-button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
 /* -- PORTFOLIO SECTION -- */
+section.portfolio {
+    max-width: 1750px;
+}
+
 .terminal-logo {
     color: var(--text-color);
     margin-top: 25px;
@@ -286,7 +378,7 @@ section.portfolio {
 }
 
 .folio-container {
-    padding: 30px 0 45px;
+    padding: 30px 0 25px;
 }
 
 .folio-container ul {
@@ -317,12 +409,13 @@ section.portfolio {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .folio-item {
     position: relative;
     width: 400px;
-    height: 200px;
+    height: 250px;
     margin: 15px;
     overflow: hidden;
     display: none;
@@ -343,6 +436,8 @@ section.portfolio {
 }
 
 .folio-overlay {
+    display: flex;
+    flex-direction: column;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -351,6 +446,12 @@ section.portfolio {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.folio-overlay button,
+.folio-overlay a {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .folio-item:hover .folio-image {
@@ -437,8 +538,8 @@ footer {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    z-index: 10; /* Sit on top */
+    padding-top: 75px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -448,19 +549,31 @@ footer {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+@media screen and (min-width: 700px) {
+    .modal {
+        padding-top: 140px;
+    }
+}
+
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: var(--bg-color);
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
-    width: 80%;
+    width: 92%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
+}
+
+@media screen and (min-width: 700px) {
+    .modal-content {
+        width: 65%;
+    }
+    
 }
 
 /* Add Animation */
@@ -475,7 +588,7 @@ footer {
 }
 
 /* The Close Button */
-.close {
+/* .close {
     color: white;
     float: right;
     font-size: 28px;
@@ -487,22 +600,128 @@ footer {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+} */
+
+.modal-body video,
+.modal-body img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
 
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+.modal-text {
+    padding: 25px 0;
+}
+
+.modal-body p {
+    max-width: 70%;
+    margin: auto;
+    font-size: .9rem;
+}
+
+/* Modal Slider */  
+/* Hide the images by default */
+.slides1, 
+.slides2,
+.slides3 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
     color: white;
+    background-color: var(--btn-bg);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.slider-social,
+.slider-numbers {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 10px 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.slider-social {
+    font-size: 15px;
+    padding-top: 15px;
+    top: 0;
+    text-shadow:5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.slider-social a,
+.slider-social i {
+    font-size: 1.1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slider-social i:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+/* Caption text */
+.slider-caption {
+    color: #f2f2f2;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-numbers {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Fading animation */
+.slider-fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 1025px) {
@@ -519,7 +738,7 @@ footer {
         z-index: 1000;
         font-size: 30px;
         background-color: transparent;
-        margin-top: 0x;
+        margin-top: 0;
     }
 
     .contact-icons i {
@@ -591,15 +810,18 @@ footer {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         padding-top: 50px;
-        padding-bottom: 50px;
     }
 
     .resume-text {
+        padding-top: 125px;
         padding-left: 50px;
     }
 
+    .resume-button {
+        text-align: left;
+    }
+
     .language-list {
-        margin-top: 75px;
         margin-bottom: 75px;
     }
     

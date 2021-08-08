@@ -1,36 +1,3 @@
-// Active on scroll - Update this comment!
-// Get all sections that have an ID defined
-const sections = document.querySelectorAll("section[id]");
-
-// Add an event listener listening for scroll
-window.addEventListener("scroll", navHighlighter);
-
-function navHighlighter() {
-  
-  // Get current scroll position
-  let scrollY = window.pageYOffset;
-  
-  // Now we loop through sections to get height, top and ID values for each
-  sections.forEach(current => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
-    
-    /*
-    - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
-    - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
-    */
-    if (
-      scrollY > sectionTop &&
-      scrollY <= sectionTop + sectionHeight
-    ){
-      document.querySelector(".navbar a[href*=" + sectionId + "]").classList.add("nav-active");
-    } else {
-      document.querySelector(".navbar a[href*=" + sectionId + "]").classList.remove("nav-active");
-    }
-  });
-}
-
 // Mobile Nav Toggle
 function navToggle() {
     var toggle = document.getElementById('navbarItems');
@@ -39,6 +6,25 @@ function navToggle() {
       } else {
         toggle.style.opacity = "1";
       }
+}
+
+// Button click functions
+// Github
+function github() {
+  window.open(
+    "https://www.github.com", "_blank");
+}
+
+// LinkedIn
+function github() {
+  window.open(
+    "https://www.linkedin.com", "_blank");
+}
+
+// Portfolio
+function folio() {
+  window.open(
+    "porfolio.html");
 }
 
 // Client Logo Slider
@@ -51,7 +37,6 @@ root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
-
 
 // Portfolio Filter 
 const gridItems = document.querySelectorAll('.folio-item');
@@ -92,7 +77,7 @@ function toggleClass(folioBtn, buttonToActivate) {
 
 showAll()
 
-// Modal
+// MODAL
 // Get the button that opens the modal
 var btn = document.querySelectorAll("button.modal-button");
 
@@ -127,4 +112,34 @@ window.onclick = function(event) {
       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
      }
     }
+}
+
+// Modal Slider
+var slideIndex = [1,1,1,1,1,1,1,1,1];
+var slideId = ['slides1', 'slides2', 'slides3', 'slides4', 'slides5', 'slides6', 'slides7', 'slides8', 'slides9']
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
+showSlides(1, 6);
+showSlides(1, 7);
+showSlides(1, 8);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n, no);
+}
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
 }
