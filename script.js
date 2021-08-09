@@ -21,23 +21,6 @@ function github() {
     "https://www.linkedin.com", "_blank");
 }
 
-// Portfolio
-function folio() {
-  window.open(
-    "porfolio.html");
-}
-
-// Client Logo Slider
-const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-const marqueeContent = document.querySelector("ul.marquee-content");
-
-root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-for(let i=0; i<marqueeElementsDisplayed; i++) {
-  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-}
-
 // Portfolio Filter 
 const gridItems = document.querySelectorAll('.folio-item');
 const folioBtn = document.querySelectorAll('.folio-btn');

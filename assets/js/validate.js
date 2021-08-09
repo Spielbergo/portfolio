@@ -1,6 +1,6 @@
 const form = document.getElementById('form');
 const messageContainer = document.querySelector('.message-container');
-const message = document.getElementById('message');
+const message = document.getElementById('messageResponse');
 
 let isValid = false;
 
@@ -17,7 +17,7 @@ function validateForm() {
 
     // If form is valid
     if (isValid) {
-        message.textContent = 'Successfully Registered!'
+        message.textContent = 'Your form has been sent'
         message.style.color = 'green';
         messageContainer.style.color = 'green';
     }
