@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Scott Sutherland | Front End Developer</title>
+        <title>404 - Scott Sutherland | Front End Developer</title>
 
         <!-- SEO META TAGS -->
         <meta name="title" content="Scott Sutherland | Front End Developer">
@@ -25,8 +25,48 @@
         <!-- CSS STYLES -->
         <!-- Main Style Sheet -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/404.css">
     </head>
 <body>
-    404
+    <!-- Image -->
+    <div class="image">
+        <img src="assets/images/404.jpg" alt="Long trail in the woods">
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <ul id="navbarItems" class="navbar-items">
+            <li><a href="https://www.scottsutherland.info" class="current">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- Logo -->
+            <li class="nav-logo"><a href="#"><img src="assets/images/logo.png" alt="Scott Sutherland Logo" width="100" height="100"></a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <hr class="nav-divider">
+            <!-- Contact icons -->
+            <div class="contact-icons">
+                <a aria-label="Email me link" href="mailto:scott@scottsutherland.info" title="Email me here or use the form"><i class="fa fa-envelope"></i></a>
+                <a aria-label="My Github link" href="https://github.com/Spielbergo" target="_blank" title="My Github"><i class="fab fa-github"></i></a>
+                <a aria-label="My Linkedin link" href="https://www.linkedin.com/in/scott-sutherland-7745045a/" title="My LinkedIn Page"><i class="fab fa-linkedin"></i></a>
+                <a aria-label="My phone number" href="tel:6473399475" title="My phone number"><i class="fa fa-phone"></i></a>
+            </div>
+        </ul>
+        <!-- Mobile menu toggle -->
+        <div>
+            <button aria-label="Mobile Menu Toggle" id="mobileToggle" class="mobile-toggle" onclick = "navToggle()"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Text -->
+    <div class="text">
+        <h1>You appear to have taken the wrong trail.</h1>
+        <h2>Head back to safety before nightfall</h2>
+        <!-- CTA buttons -->
+        <div class="buttons">
+            <button>Homepage</button>
+            <button>Portfolio Page</button>
+        </div>
+    </div>
+    
 </body>
 </html>

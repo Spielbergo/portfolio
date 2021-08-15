@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
     $mail = new PHPMailer;
     $mail->isSMTP();
-    $mail->Host = '	mail.scottsutherland.info';
+    $mail->Host = 'mail.scottsutherland.info';
     $mail->Port = 587;
     $mail->SMTPAuth = true;
     $mail->Username = 'hireme@scottsutherland.info';
