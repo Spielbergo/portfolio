@@ -146,7 +146,7 @@ hr {
 }
 
 .nav-active {
-    color: var(--hover-color)
+    color: var(--hover-color);
 }
 
 .contact-icons {
@@ -193,6 +193,12 @@ hr {
 }
 
 /* -- HEADER -- */
+section.header {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
 header {
     /* position: absolute; */
     height: 90vh;
@@ -257,7 +263,6 @@ h2 {
     font-size: 2rem;
     margin-top: 35px;
     margin-bottom: 35px;
-    /* text-shadow: 2px 3px 4px #837f7f; */
 }
 
 .language-list li:nth-child(1) {color: red;}
@@ -393,7 +398,7 @@ h2 {
 .box .info .job{
     font-size: 16px;
     font-weight: 500;
-    color: var(--btn-bg);
+    color: #FA0000;
 }
 
 .box .info .stars{
@@ -997,6 +1002,6 @@ footer {
     }
 
     .contact-overlay {
-        height: 88%;
+        height: 90%;
     }
 }

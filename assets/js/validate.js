@@ -1,6 +1,6 @@
 const form = document.getElementById('form');
-const messageContainer = document.querySelector('.message-container');
-const message = document.getElementById('messageResponse');
+const messageContainer = document.getElementById('messageContainer');
+const message = document.getElementById('message');
 
 let isValid = false;
 
@@ -11,7 +11,6 @@ function validateForm() {
     if (!isValid) {
         message.textContent = 'Please fill out all fields.';
         message.style.color = 'red';
-        messageContainer.style.borderColor = 'red';
         return;
     }
 
@@ -27,12 +26,7 @@ function processFormData(e) {
     e.preventDefault();
     // Validate Form
     validateForm();
-    // Submit Data if Valid
-    if (isValid) {
-        storeFormData();
-    }
 }
-
 
 // Event Listener
 form.addEventListener('submit', processFormData)

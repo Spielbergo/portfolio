@@ -8,7 +8,7 @@ require 'vendor/autoload.php';
     $mail->Port = 587;
     $mail->SMTPAuth = true;
     $mail->Username = 'hireme@scottsutherland.info';
-    $mail->Password = 'Disco1279121212#2323';
+    $mail->Password = 'gw!w5^Kq8!CT';
     $mail->setFrom('hireme@scottsutherland.info', 'Your Portfolio Website');
     $mail->addAddress('scott@webcheddar.ca', 'Portfolio Page');
     if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
@@ -17,7 +17,7 @@ require 'vendor/autoload.php';
         $mail->Body = <<<EOT
 Email: {$_POST['email']}
 Name: {$_POST['firstName']} {$_POST['lastName']}
-Phone: {$_POST['message']}
+Phone: {$_POST['phone']}
 Message: {$_POST['message']}
 EOT;
         if (!$mail->send()) {

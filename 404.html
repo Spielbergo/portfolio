@@ -35,11 +35,15 @@
 
     <!-- NAVIGATION -->
     <nav class="navbar">
-        <ul id="navbarItems" class="navbar-items">
-            <li><a href="https://www.scottsutherland.info" class="current">Home</a></li>
+        <ul id="navbarItems" class="navbar-items" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
+            <!-- Nav menu items -->
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
             <!-- Logo -->
-            <li class="nav-logo"><a href="#"><img src="assets/images/logo.png" alt="Scott Sutherland Logo" width="100" height="100"></a></li>
+            <li class="nav-logo">
+                <img src="assets/images/logo.png" alt="Scott Sutherland Logo" width="100" height="100">
+            </li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <hr class="nav-divider">
@@ -63,10 +67,24 @@
         <h2>Head back to safety before nightfall</h2>
         <!-- CTA buttons -->
         <div class="buttons">
-            <button>Homepage</button>
-            <button>Portfolio Page</button>
+            <button id="homeButton">Homepage</button>
+            <button id="folioButton">Portfolio Page</button>
         </div>
     </div>
     
+    <!-- JS Scripts -->
+    <!-- Back to home button -->
+    <script type="text/javascript">
+        document.getElementById("homeButton").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+    
+    <!-- To porfolio page button -->
+    <script type="text/javascript">
+        document.getElementById("folioButton").onclick = function () {
+            location.href = "https://www.scottsutherland.info/portfolio.html";
+        };
+    </script>
 </body>
 </html>

@@ -1,3 +1,9 @@
+// Loader
+window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+
+
 // Mobile Nav Toggle
 function navToggle() {
     var toggle = document.getElementById('navbarItems');
@@ -6,6 +12,41 @@ function navToggle() {
       } else {
         toggle.style.opacity = "1";
       }
+}
+
+// Nav Highlight on Scroll 
+// Credit: Danilo Bilanoski
+// https://codepen.io/dbilanoski/pen/LabpzG
+// Get all sections that have an ID defined
+const sections = document.querySelectorAll("section[id]");
+
+// Add an event listener listening for scroll
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  
+  // Get current scroll position
+  let scrollY = window.pageYOffset;
+  
+  // Now we loop through sections to get height, top and ID values for each
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 100;
+    sectionId = current.getAttribute("id");
+    
+    /*
+    - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+    - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+    */
+    if (
+      scrollY > sectionTop &&
+      scrollY <= sectionTop + sectionHeight
+    ){
+      document.querySelector(".navbar a[href*=" + sectionId + "]").classList.add("nav-active");
+    } else {
+      document.querySelector(".navbar a[href*=" + sectionId + "]").classList.remove("nav-active");
+    }
+  });
 }
 
 // Button click functions
@@ -60,7 +101,7 @@ function toggleClass(folioBtn, buttonToActivate) {
 
 showAll()
 
-// MODAL
+// MODAL - W3 Schools 
 // Get the button that opens the modal
 var btn = document.querySelectorAll("button.modal-button");
 
@@ -97,7 +138,7 @@ window.onclick = function(event) {
     }
 }
 
-// Modal Slider
+// Modal Slider - W3 Schools
 var slideIndex = [1,1,1,1,1,1,1,1,1];
 var slideId = ['slides1', 'slides2', 'slides3', 'slides4', 'slides5', 'slides6', 'slides7', 'slides8', 'slides9']
 showSlides(1, 0);
