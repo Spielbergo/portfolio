@@ -1,0 +1,101 @@
+[
+    {
+        "category" : "grid",
+        "image" : "assets/images/folio/scottsutherland/portfolio-item-01.jpg",
+        "preview" : "modal1",
+        "previewBtn" : "#modal1",
+        "slides" : "slides1",
+        "folioSlide1" : "assets/images/folio/scottsutherland/portfolio-item-02.jpg",
+        "code" : "https://github.com/Spielbergo/portfolio"
+    },
+
+    {
+        "category" : "bootstrap",
+        "image" : "assets/images/folio/uoft/portfolio-item-01.jpg",
+        "preview" : "modal2",
+        "previewBtn" : "#modal2",
+        "slides" : "slides2",
+        "live" : "https://www.medprint.webcheddar.ca",
+        "folioSlide1" : "assets/images/folio/scottsutherland/portfolio-item-02.jpg",
+        "caption" : "Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?",
+        "code" : "https://github.com/Spielbergo/portfolio"
+    },
+
+    {
+        "category" : "bootstrap",
+        "image" : "assets/images/folio/uoft/portfolio-item-01.jpg",
+        "preview" : "modal3",
+        "previewBtn" : "#modal3",
+        "slides" : "slides3",
+        "live" : "https://www.medprint.webcheddar.ca",
+        "folioSlide1" : "assets/images/folio/scottsutherland/portfolio-item-02.jpg",
+        "caption" : "Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?"
+    },
+
+    {
+        "category" : "bootstrap",
+        "image" : "assets/images/folio/uoft/portfolio-item-01.jpg",
+        "preview" : "modal4",
+        "previewBtn" : "#modal4",
+        "slides" : "slides4",
+        "live" : "https://www.medprint.webcheddar.ca",
+        "folioSlide1" : "assets/images/folio/scottsutherland/portfolio-item-02.jpg",
+        "caption" : "Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?"
+    },
+
+    {
+        "category" : "bootstrap",
+        "image" : "assets/images/folio/uoft/portfolio-item-01.jpg",
+        "preview" : "modal5",
+        "previewBtn" : "#modal5",
+        "slides" : "slides5",
+        "live" : "https://www.medprint.webcheddar.ca",
+        "folioSlide1" : "assets/images/folio/scottsutherland/portfolio-item-02.jpg",
+        "caption" : "Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?"
+    },
+
+    {
+        "category" : "bootstrap",
+        "image" : "assets/images/folio/uoft/portfolio-item-01.jpg",
+        "preview" : "modal6",
+        "previewBtn" : "#modal6",
+        "slides" : "slides6",
+        "live" : "https://www.medprint.webcheddar.ca",
+        "folioSlide1" : "assets/images/folio/scottsutherland/portfolio-item-02.jpg",
+        "caption" : "Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?"
+    },
+
+    {
+        "category" : "bootstrap",
+        "image" : "assets/images/folio/uoft/portfolio-item-01.jpg",
+        "preview" : "modal7",
+        "previewBtn" : "#modal7",
+        "slides" : "slides7",
+        "live" : "https://www.medprint.webcheddar.ca",
+        "folioSlide1" : "assets/images/folio/scottsutherland/portfolio-item-02.jpg",
+        "caption" : "Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?"
+    },
+
+    {
+        "category" : "bootstrap",
+        "image" : "assets/images/folio/uoft/portfolio-item-01.jpg",
+        "preview" : "modal8",
+        "previewBtn" : "#modal8",
+        "slides" : "slides8",
+        "live" : "https://www.medprint.webcheddar.ca",
+        "folioSlide1" : "assets/images/folio/scottsutherland/portfolio-item-02.jpg",
+        "caption" : "Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?"
+    },
+
+    {
+        "category" : "bootstrap",
+        "image" : "assets/images/folio/uoft/portfolio-item-01.jpg",
+        "preview" : "modal9",
+        "previewBtn" : "#modal9",
+        "slides" : "slides9",
+        "live" : "https://www.medprint.webcheddar.ca",
+        "folioSlide1" : "assets/images/folio/scottsutherland/portfolio-item-02.jpg",
+        "caption" : "Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?"
+    }
+    
+]

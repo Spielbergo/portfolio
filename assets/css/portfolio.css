@@ -1,0 +1,11 @@
+.folio-page i {
+    float: left;
+}
+
+.undefined {
+    display: none;
+}
+
+.slides1, .slides2, .slides3 {
+    display: block;
+}

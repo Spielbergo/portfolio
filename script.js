@@ -3,7 +3,6 @@ window.addEventListener('load',function(){
   document.querySelector('body').classList.add("loaded")  
 });
 
-
 // Mobile Nav Toggle
 function navToggle() {
     var toggle = document.getElementById('navbarItems');
@@ -47,19 +46,6 @@ function navHighlighter() {
       document.querySelector(".navbar a[href*=" + sectionId + "]").classList.remove("nav-active");
     }
   });
-}
-
-// Button click functions
-// Github
-function github() {
-  window.open(
-    "https://www.github.com", "_blank");
-}
-
-// LinkedIn
-function github() {
-  window.open(
-    "https://www.linkedin.com", "_blank");
 }
 
 // Portfolio Filter 
@@ -138,25 +124,23 @@ window.onclick = function(event) {
     }
 }
 
-// Modal Slider - W3 Schools
-var slideIndex = [1,1,1,1,1,1,1,1,1];
-var slideId = ['slides1', 'slides2', 'slides3', 'slides4', 'slides5', 'slides6', 'slides7', 'slides8', 'slides9']
-showSlides(1, 0);
-showSlides(1, 1);
-showSlides(1, 2);
-showSlides(1, 3);
-showSlides(1, 4);
-showSlides(1, 5);
-showSlides(1, 6);
-showSlides(1, 7);
-showSlides(1, 8);
+// Modal Slider - W3 Schools (Modified)
+const slideIndex = [1,1,1,1,1,1,1,1,1];
+const slideId = ['slides1', 'slides2', 'slides3', 'slides4', 'slides5', 'slides6', 'slides7', 'slides8', 'slides9']
+
+// Slide Items - for Loop
+for (let i = 0; i < slideId.length; i++) {
+  showSlides(1, i);
+}
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
+
 function currentSlide(n, no) {
   showSlides(slideIndex[no] = n, no);
 }
+
 function showSlides(n, no) {
   var i;
   var x = document.getElementsByClassName(slideId[no]);
