@@ -125,8 +125,8 @@ window.onclick = function(event) {
 }
 
 // Modal Slider - W3 Schools (Modified)
-const slideIndex = [1,1,1,1,1,1,1,1,1];
-const slideId = ['slides1', 'slides2', 'slides3', 'slides4', 'slides5', 'slides6', 'slides7', 'slides8', 'slides9']
+const slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1];
+const slideId = ['slides1', 'slides2', 'slides3', 'slides4', 'slides5', 'slides6', 'slides7', 'slides8', 'slides9', 'slides10', 'slides11', 'slides12'];
 
 // Slide Items - for Loop
 for (let i = 0; i < slideId.length; i++) {

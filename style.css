@@ -89,12 +89,13 @@ a:hover {
 }
 
 button,
+.button,
 .folio-overlay a {
     position: relative;
     width: 150px;
     color: var(--text-color);
     background-color: var(--btn-bg);
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin-right: 10px;
     text-align: center;
     font-size: 1.14rem;
@@ -104,6 +105,7 @@ button,
 }
 
 button:hover,
+.button:hover,
 .folio-overlay a:hover {
     color: var(--hover-color);
     background-color: var(--btn-hover-bg);

@@ -9,7 +9,7 @@ require 'vendor/autoload.php';
     $mail->SMTPAuth = true;
     $mail->Username = 'hireme@scottsutherland.info';
     $mail->Password = 'gw!w5^Kq8!CT';
-    $mail->setFrom('hireme@scottsutherland.info', 'Your Portfolio Website');
+    $mail->setFrom('scott@webcheddar.ca', 'Your Portfolio Website');
     $mail->addAddress('scott@webcheddar.ca', 'Portfolio Page');
     if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
         $mail->Subject = 'Portfolio Page Contact Form';
