@@ -4,11 +4,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
     $mail = new PHPMailer;
     $mail->isSMTP();
-    $mail->Host = 'mail.scottsutherland.info';
+    $mail->Host = 'mail.webcheddar.ca';
     $mail->Port = 587;
     $mail->SMTPAuth = true;
-    $mail->Username = 'hireme@scottsutherland.info';
-    $mail->Password = 'gw!w5^Kq8!CT';
+    $mail->Username = 'scott@webcheddar.ca';
+    $mail->Password = 'Disco1279121212#2323';
     $mail->setFrom('scott@webcheddar.ca', 'Your Portfolio Website');
     $mail->addAddress('scott@webcheddar.ca', 'Portfolio Page');
     if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
@@ -23,7 +23,7 @@ EOT;
         if (!$mail->send()) {
             $msg = 'Sorry, something went wrong. Please try again later.';
         } else {
-            $msg = 'Message sent! Thanks for contacting us.';
+            echo '<script>window.location = "http://www.scottsutherland.info/thankyou.html"</script>';
         }
     } else {
         $msg = 'Share it with us!';

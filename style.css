@@ -188,6 +188,7 @@ hr {
 
 #navbarItems {
     opacity: 0;
+    display: none;
 } 
 
 .navbar-items li {
@@ -277,8 +278,7 @@ h2 {
 .language-list li:nth-child(2) {color: blue;}
 .language-list li:nth-child(3) {color: yellow;}
 .language-list li:nth-child(4) {color: white;}
-.language-list li:nth-child(5) {color: green;}
-.language-list li:nth-child(6) {color: skyblue;}
+.language-list li:nth-child(5) {color: skyblue;}
 
 /* Skills Bar */
 .u-center {
@@ -502,7 +502,7 @@ section.portfolio {
 }
 
 .folio-container {
-    padding: 50px 0 100px;
+    padding: 50px 0 10px;
 }
 
 .folio-container ul {
@@ -596,6 +596,10 @@ section.portfolio {
     width: 60%;
 }
 
+.slider-fade a {
+    text-decoration: underline;
+}
+
 /* -- CONTACT SECTION -- */
 section.contact {
     background-image: url("assets/images/contact-bg.jpg");
@@ -614,11 +618,10 @@ section.contact {
 
 #contact h3 {
     padding-top: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
-#contact h3,
-.contact-subtitle {
+#contact h3 {
     max-width: 45%;
     margin: auto;
     position: relative;
@@ -631,17 +634,28 @@ section.contact {
     position: relative;
     z-index: 10;
     max-width: 1025px;
-    margin:  0 auto 50px;
+    margin:  0 auto;
     padding: 30px 50px;
     color: #f1f1f1;
+    text-align: center;
 }
 
 /* Contact Section - TEXT */
+.contact-text {
+    position: relative;
+    bottom: 60px;
+}
+
 .contact-text h4 {
     color: var(--text-color-2);
     font-size: 1.7rem;
     font-weight: 700;
+    margin-top: 25px;
     margin-bottom: 15px;
+}
+
+.contact-subtitle {
+    margin-bottom: 10px;
 }
 
 .contact-text a {
@@ -662,10 +676,6 @@ section.contact {
 }
 
 /* Contact Section - FORM */
-.contact-form {
-    margin-top: 50px;
-}
-
 input,
 textarea {
     width: 100%;
@@ -739,8 +749,17 @@ label {
 
 /* -- FOOTER -- */
 footer {
-    height: 5vh;
+    position: relative;
+    z-index: 1000;
+    font-size: 14px;
+    color: #f2f2f2;
     background-color:#000;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin-bottom: 0;
 }
 
 /*  -- MODAL -- */
@@ -755,8 +774,7 @@ footer {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (min-width: 700px) {
@@ -940,6 +958,10 @@ footer {
         font-size: 16px;
     }
     
+    #navbarItems {
+        display: flex;
+    }
+
     .navbar-items {
         flex-direction: row;
         justify-content: center;
@@ -986,7 +1008,7 @@ footer {
     }
 
     .about-text {
-        padding-right: 25px;
+        padding-right: 75px;
     }
 
     /* RESUME - MQ */
@@ -1012,9 +1034,14 @@ footer {
     .contact-container {
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        text-align: left;
     }
 
     .contact-overlay {
-        height: 90%;
+        height: 75%;
+    }
+
+    .contact-text {
+        max-width: 65%;
     }
 }

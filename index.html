@@ -50,7 +50,7 @@
     <nav class="navbar">
         <ul id="navbarItems" class="navbar-items" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
             <!-- Nav menu items -->
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" class="nav-active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#resume">Resume</a></li>
             <!-- Logo -->
@@ -62,7 +62,7 @@
             <hr class="nav-divider">
             <!-- Contact icons -->
             <div class="contact-icons">
-                <a aria-label="Email me link" href="mailto:scott@scottsutherland.info" title="Email me here or use the form"><i class="fa fa-envelope"></i></a>
+                <a aria-label="Email me link" href="mailto:scott@webcheddar.ca" title="Email me here or use the form"><i class="fa fa-envelope"></i></a>
                 <a aria-label="My Github link" href="https://github.com/Spielbergo" target="_blank" title="My Github"><i class="fab fa-github"></i></a>
                 <a aria-label="My Linkedin link" href="https://www.linkedin.com/in/scott-sutherland-7745045a/" title="My LinkedIn Page"><i class="fab fa-linkedin"></i></a>
                 <!-- <a aria-label="My phone number" href="tel:6473399475" title="My phone number"><i class="fa fa-phone"></i></a> -->
@@ -70,7 +70,7 @@
         </ul>
         <!-- Mobile menu toggle -->
         <div>
-            <button aria-label="Mobile Menu Toggle" id="mobileToggle" class="mobile-toggle" onclick = "navToggle()"><i class="fa fa-bars"></i></button>
+            <button aria-label="Mobile Menu Toggle" id="mobileToggle" class="mobile-toggle" onclick = "navToggle()" style="background: transparent;"><i class="fa fa-bars"></i></button>
         </div>
     </nav>
 
@@ -105,7 +105,7 @@
                 <h1>Scott Su<span style="position: relative; z-index: 21;">the</span>rlan<span style="position: relative; z-index: 21;">d</span></h1>
                 <h2>Front End Developer</h2>
                 <!-- Subtitle -->
-                <p class="subtitle-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cumque at veritatis quibusdam deleniti commodi repellat.</p>
+                <p class="subtitle-text">I am currently available for freelance, full or part time work.</p>
                 <!-- CTA Buttons -->
                     <div class="header-btns">
 
@@ -132,10 +132,11 @@
             <!-- About Me section text -->
             <div class="about-text">
                 <h3>About <span>Me</span></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero aliquam quis, harum, fugiat molestiae cupiditate, temporibus deleniti ducimus quibusdam eum qui modi praesentium! Placeat facilis et delectus deserunt laborum?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas et, error provident non optio, sint autem soluta nisi nulla reiciendis doloribus, modi iure placeat incidunt molestias dignissimos in dolores dicta!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero aliquam quis, harum, fugiat molestiae cupiditate, temporibus deleniti ducimus quibusdam eum qui modi praesentium! Placeat facilis et delectus deserunt laborum?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas et, error provident non optio, sint autem soluta nisi nulla reiciendis doloribus, modi iure placeat incidunt molestias dignissimos in dolores dicta!</p>
+                <p>Sept 2021</p>
+                <p>I am a Toronto based Front End Deveolper. I have been working freelance on the side since February of 2019 and I have been working part time with a company working almost exclusively on WordPress sites since January of 2020.</p>
+                <p>After my full time job ended in May of 2020 I took the time to learn. I took online courses from Zero to Mastery and freecodecamp among others. I concentrated mainly on CSS and JavaScript. </p>
+                <p>Over the last few years I have also learned products such PhotoShop, After Effects, Keap, Zoho, Zapier and more.</p>
+                <p>I love the constant learning and problem solving mixed with a little need for creativity that comes with development! </p>
             </div>
             <!-- Personal image -->
             <div class="about-img" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
@@ -186,10 +187,10 @@
 
                         <li class="tl-item" ng-repeat="item in retailer_history">
                             <div class="timestamp">
-                            Jan 2008 -<br> May 2020
+                            Jan 2008 -<br>May 2020
                             </div>
                             <div class="item-title">Crocodile Rock - General Manager</div>
-                            <div class="item-detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil sapiente ratione corporis maxime, consectetur atque autem suscipit voluptas at nam ipsum distinctio aspernatur molestias quos est. Odio minima perspiciatis aperiam.</div>
+                            <div class="item-detail">I was responsible for most aspects of the business. I hired, helped to train and coached a team of over 60 staff. I maintained and repaired all office computers, POS systems and networks in the venue. I also created promotional video loops and posters using After Effects, Photoshop and more.</div>
                         </li>
                       
                     </ul>
@@ -244,21 +245,41 @@
             <li><i class="fab fa-js"></i></li>
             <li><i class="fab fa-php"></i></li>
             <li><i class="fab fa-wordpress"></i></li>
-            <li><i class="fab fa-react"></i></li>
         </ul>
 
     <!-- Created By CodingNepal - www.codingnepalweb.com -->
     <div class="wrapper">
-
+        <!-- First Testimonial -->
         <div class="box">
             <i class="fas fa-quote-left quote"></i>
             <p>The delivery of the final product was done quickly and efficiently. A Great experience overall, good customer service, we were satisfied with the work and the continued support and content management was excellent.</p>
             <div class="content">
                 <div class="info">
-
                     <div class="name">Craig Hayden</div>
-                        <div class="job">Businsess Officer | U of T</div>
+                    <div class="job">Businsess Officer | U of T</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                </div>
+                <!-- Client Image -->
+                <div class="image">
+                    <img src="assets/images/testimonials/testimonials-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
 
+        <!-- Second Testimonial -->
+        <div class="box">
+            <i class="fas fa-quote-left quote"></i>
+            <p>Scott the lead is very tech savy with SEO, content, visuals, and web site development. He is very proficient with building a brand and getting a start up front and setter. I strongly recommend his on line services.</p>
+            <div class="content">
+                <div class="info">
+                    <div class="name">Barry McLeod</div>
+                    <div class="job">Owner | Crocodile Rock</div>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -266,54 +287,36 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
+                </div>
+                <!-- Client Image -->
+                <div class="image">
+                    <img src="assets/images/testimonials/testimonials-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-left  quote"></i>
+            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+            <div class="content">
+                <div class="info">
+                    <div class="name">Kristina Bellis</div>
+                    <div class="job">Freelancer | Advertiser</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
-
-                    <div class="image">
-                        <img src="assets/images/testimonials/testimonials-2.jpg" alt="">
-                    </div>
+                </div>
+                <!-- Client Image -->
+                <div class="image">
+                    <img src="assets/images/testimonials/testimonials-4.jpg" alt="">
+                </div>
             </div>
         </div>
 
-        <div class="box">
-        <i class="fas fa-quote-left quote"></i>
-        <p>Scott the lead is very tech savy with SEO, content, visuals, and web site development. He is very proficient with building a brand and getting a start up front and setter. I strongly recommend his on line services.</p>
-        <div class="content">
-            <div class="info">
-            <div class="name">Barry McLeod</div>
-            <div class="job">Owner | Crocodile Rock</div>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            </div>
-            <div class="image">
-                <img src="assets/images/testimonials/testimonials-3.jpg" alt="">
-            </div>
-        </div>
-        </div>
-        <div class="box">
-        <i class="fas fa-quote-left  quote"></i>
-        <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-        <div class="content">
-            <div class="info">
-            <div class="name">Kristina Bellis</div>
-            <div class="job">Freelancer | Advertiser</div>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            </div>
-            <div class="image">
-                <img src="assets/images/testimonials/testimonials-4.jpg" alt="">
-            </div>
-        </div>
-        </div>
     </div>
 
     </section>
@@ -335,7 +338,7 @@
                 <li id="all" onclick="showAll()" class="folio-btn active">All</li>
                 <li onclick="showCategory('bootstrap')" class="folio-btn">Bootstrap</li>
                 <li onclick="showCategory('grid')" class="folio-btn">Flex/Grid</li>
-                <li onclick="showCategory('javascript')" class="folio-btn">JS Learnin'</li>
+                <li onclick="showCategory('javascript')" class="folio-btn">JS Projects</li>
             </ul>
             <!-- Portfolio items -->
             <div class="folio-item-container" data-aos="zoom-in-up" data-aos-duration="1500">
@@ -389,7 +392,6 @@
                     <div class="folio-overlay">
                         <button href="#myModal5" class="modal-button">Preview</button>
                         <a href="https://www.pva.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live</a>
-                        <a href="https://github.com/Spielbergo/pva" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
 
@@ -399,7 +401,7 @@
                     <!-- Portfolio item buttons -->
                     <div class="folio-overlay">
                         <button href="#myModal6" class="modal-button">Preview</button>
-                        <a href="https://www.rohutton.ca" target="_blank" class="button"><i class="fa fa-globe"></i> Live</a>
+                        <a href="https://www.rohutton.com" target="_blank" class="button"><i class="fa fa-globe"></i> Live</a>
                         <a href="https://github.com/Spielbergo/rohutton" target="_blank" class="button"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
@@ -479,18 +481,18 @@
     <section id="contact" class="section contact">
         <div class="contact-overlay"></div>
         <h3 class="center">Contact <span>Me</span></h3>
-        <p class="contact-subtitle center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias perspiciatis autem cumque? Aliquam non vitae exercitationem distinctio totam nesciunt adipisci odio deleniti dolorum voluptatem.</p>
         <div class="contact-container">
 
             <div class="contact-text">
                 <h4>Scott Sutherland</h4>
+                <p class="contact-subtitle">I am currently available for freelance, full or part time work.</p>
                 <!-- Contact info -->
-                <a href="mailto:hirescott@scottsutherland.info"><i class="fa fa-envelope"></i> hirescott@scottsutherland.info</a><br>
+                <a href="mailto:scott@webcheddar.ca"><i class="fa fa-envelope"></i> scott@webcheddar.ca</a><br>
                 <span><i class="fa fa-map-marker-alt"></i> Toronto, Ontario</span>
                 <!-- Social icons -->
                 <div class="contact-social-icons">
-                    <a aria-label="My Github link" href="https://github.com/Spielbergo" target="_blank"><i class="fab fa-github"></i></a>
-                    <a aria-label="My Linkedin link" href="https://www.linkedin.com/in/scott-sutherland-7745045a/"><i class="fab fa-linkedin"></i></a>
+                    <a aria-label="My Github link" href="https://github.com/Spielbergo"><i class="fab fa-github"></i></a>
+                    <a aria-label="My Linkedin link" href="https://www.linkedin.com/in/scott-sutherland-7745045a/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             
@@ -509,7 +511,7 @@
                     <input aria-label="Phone" type="tel" id="phone" placeholder="555-555-5555" name="phone">
 
                     <div class="full-width-input">
-                        <textarea aria-label="Message" id="messageBox" placeholder="Please type your message..." name="message" cols="30" rows="5"></textarea>
+                        <textarea aria-label="Message" id="messageBox" placeholder="Please type your message..." name="message" cols="30" rows="4"></textarea>
                     </div>
 
                     <div class="submit-btn">
@@ -534,9 +536,8 @@
 
     <!-- FOOTER -->
     <footer>
-
+        <p>&#169 2021 Scott Sutherland</p>
     </footer>
-    
     <!--==  MODALS - W3 Schools ==-->
     <!-- Modal 01 - This Portfolio -->
     <!-- The Modal -->
@@ -554,7 +555,7 @@
             <div class="slides1 slider-fade">
                 <img src="assets/images/folio/scottsutherland/portfolio-item-01.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>This site was created by me. No templates used. I tried to create it using only HTML and CSS with and a little JS. I also took all the photos. I did use some components found online such as the loader, marquee and portfolio filter.</p>
                     <div class="slider-numbers">1 / 3</div>
                 </div>
             </div>
@@ -563,7 +564,7 @@
             <div class="slides1 slider-fade">
                 <img src="assets/images/folio/scottsutherland/portfolio-item-02.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor </p>
+                    <p>The portfolio section is a work in progress. I am creating a JSON file (to simulate an API) and will be using JS to render the section. I am hoping to remove all of that repetitive HTML and make it quicker to add future updates. I will also be adding animations to the image filter using <a href="https://yiotis.net/filterizr" target="_blank">Filterizr</a>.</p>
                     <div class="slider-numbers">2 / 3</div>
                 </div>
             </div>
@@ -572,7 +573,7 @@
             <div class="slides1 slider-fade">
                 <img src="assets/images/folio/scottsutherland/portfolio-item-03.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>PHPMailer was installed to send send form data. A VERY basic "recaptcha" has been added and I will upgade if needed.</p>
                     <div class="slider-numbers">3 / 3</div>
                 </div>
             </div>
@@ -599,31 +600,31 @@
 
             <!-- First Slide -->
             <div class="slides2 slider-fade">
-                <video controls loop>
-                    <source src="assets/images/folio/uoft/portfolio-video-1.mp4">
-                    <source src="assets/images/folio/uoft/portfolio-video-1.ogv">
-                </video>
+                <img src="assets/images/folio/uoft/portfolio-item-03.jpg" alt="">
                 <!-- <img src="assets/images/folio/uoft/portfolio-details.jpg" alt=""> -->
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>I was hired to create a site for the new 3D printing division at the University of Toronto's MedStore. This was my first bigger project. They already had a Wix site setup so I used that as a base for content and with the help of a Bootstrap template created this site.</p>
                     <div class="slider-numbers">1 / 3</div>
                 </div>
             </div>
 
             <!-- Second Slide -->
             <div class="slides2 slider-fade">
-                <img src="assets/images/folio/uoft/portfolio-item-02.jpg" alt="">
+                <video poster="assets/images/folio/uoft/portfolio-item-02.jpg" controls loop>
+                    <source src="assets/images/folio/uoft/portfolio-video-1.mp4">
+                    <source src="assets/images/folio/uoft/portfolio-video-1.ogv">
+                </video>
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor </p>
+                    <p>I created this video using Sony Vegas and videos that were provided to me from the client.</p>
                     <div class="slider-numbers">2 / 3</div>
                 </div>
             </div>
 
             <!-- Third Slide -->
             <div class="slides2 slider-fade">
-                <img src="assets/images/folio/uoft/portfolio-item-03.jpg" alt="">
+                <img src="assets/images/folio/uoft/portfolio-item-02.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>The client required a contact form that was able to allow LARGE file attachments.</p>
                     <div class="slider-numbers">3 / 3</div>
                 </div>
             </div>
@@ -653,16 +654,16 @@
             <div class="slides3 slider-fade">
                 <img src="assets/images/folio/jenjewell/portfolio-item-01.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>This is a Wordpress site. The site was very slow so I was tasked with speeding it up. I recreated the design exactly using only HTML and CSS and I removed the two frameworks that were installed as well as 75% of the plugins. The site went from a Lighthouse avg speed of 17 to about 90-94. </p>
                     <div class="slider-numbers">1 / 3</div>
                 </div>
             </div>
 
             <!-- Second Slide -->
             <div class="slides3 slider-fade">
-                <img src="assets/images/folio/jenjewell/portfolio-item-02.jpg" alt="">
+                <img src="assets/images/folio/jenjewell/poly-animation-small.gif" style="object-fit: contain;" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor </p>
+                    <p>I was asked to have an animation created that could be used over multiple marketing campagins. I worked together with a freelance animator to put it together. I am able to edit the final product in After Effects if needed. I would have preferred an SVG but video was requested.</p>
                     <div class="slider-numbers">2 / 3</div>
                 </div>
             </div>
@@ -671,7 +672,7 @@
             <div class="slides3 slider-fade">
                 <img src="assets/images/folio/jenjewell/portfolio-item-03.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>I continue to work on this site to this day but mostly just maintenance. The site design is not mine but I did create several containers. There are multiple developers working on this site so I did not add a link to the code.</p>
                     <div class="slider-numbers">3 / 3</div>
                 </div>
             </div>
@@ -701,7 +702,7 @@
             <div class="slides4 slider-fade">
                 <img src="assets/images/folio/math-sprint-game/portfolio-item.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>This is a simple multiplication game created while learning JavaScript. Scores are saved in Local Storage.</p>
                     <div class="slider-numbers">1 / 1</div>
                 </div>
             </div>
@@ -726,7 +727,7 @@
             <div class="slides5 slider-fade"> 
                 <img src="assets/images/folio/pva/portfolio-item-01.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>This is the largest client I have had so far. They have around 60 pages in English and 60 in French. It was created using a Bootstrap template and many customizations including the video that I created using stock video clips.</p>
                     <div class="slider-numbers">1 / 3</div>
                 </div>
             </div>
@@ -735,7 +736,7 @@
             <div class="slides5 slider-fade">
                 <img src="assets/images/folio/pva/portfolio-item-02.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor </p>
+                    <p>I have built a very strong relationship with this company and they continue to employ me to add new pages and updates.</p>
                     <div class="slider-numbers">2 / 3</div>
                 </div>
             </div>
@@ -744,7 +745,7 @@
             <div class="slides5 slider-fade">
                 <img src="assets/images/folio/pva/portfolio-item-03.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p><a href="https://www.chartjs.org/" target="_blank">Chart.js</a> was used to help create many varied charts and graphs.</p>
                     <div class="slider-numbers">3 / 3</div>
                 </div>
             </div>
@@ -765,7 +766,7 @@
         <div class="modal-body">
             <!-- Slide Nav -->
             <div class="slider-social">
-                <a aria-label="Link to live website" href="https://www.rohutton.ca" target="_blank" title="Live Site"><i class="fa fa-globe"></i></a>
+                <a aria-label="Link to live website" href="https://www.rohutton.com" target="_blank" title="Live Site"><i class="fa fa-globe"></i></a>
                 <a aria-label="My Github link" href="https://github.com/Spielbergo/rohutton" target="_blank" title="Github"><i class="fab fa-github"></i></a>
                 <span><i class="fa fa-times-circle close" title="Close Window"></i></span>
             </div>
@@ -774,7 +775,7 @@
             <div class="slides6 slider-fade">
                 <img src="assets/images/folio/rohutton/portfolio-item-01.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>This is a very simple site for a Canadian writer. All images were supplied by her and the site was creted with a Bootstrap template.</p>
                     <div class="slider-numbers">1 / 3</div>
                 </div>
             </div>
@@ -783,7 +784,7 @@
             <div class="slides6 slider-fade">
                 <img src="assets/images/folio/rohutton/portfolio-item-02.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor </p>
+                    <p>The site has nice fades and is basically a fullscreen slideshow.</p>
                     <div class="slider-numbers">2 / 3</div>
                 </div>
             </div>
@@ -792,7 +793,7 @@
             <div class="slides6 slider-fade">
                 <img src="assets/images/folio/rohutton/portfolio-item-03.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>Simple contact form.</p>
                     <div class="slider-numbers">3 / 3</div>
                 </div>
             </div>
@@ -822,7 +823,7 @@
             <div class="slides7 slider-fade">
                 <img src="assets/images/folio/webcheddar/portfolio-item-01.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>This is the company I created to start taking freelance clients. It has served as a portfolio page in the past and has many of the same projects as this site.</p>
                     <div class="slider-numbers">1 / 3</div>
                 </div>
             </div>
@@ -831,7 +832,7 @@
             <div class="slides7 slider-fade">
                 <img src="assets/images/folio/webcheddar/portfolio-item-02.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor </p>
+                    <p>This site was created using a Bootstrap template.</p>
                     <div class="slider-numbers">2 / 3</div>
                 </div>
             </div>
@@ -840,7 +841,7 @@
             <div class="slides7 slider-fade">
                 <img src="assets/images/folio/webcheddar/portfolio-item-03.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>Standard contact form.</p>
                     <div class="slider-numbers">3 / 3</div>
                 </div>
             </div>
@@ -870,7 +871,7 @@
             <div class="slides8 slider-fade">
                 <img src="assets/images/folio/smashpets/portfolio-item-01.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>This is another one of my early sites. It was created with a Bootstrap template.</p>
                     <div class="slider-numbers">1 / 3</div>
                 </div>
             </div>
@@ -879,7 +880,7 @@
             <div class="slides8 slider-fade">
                 <img src="assets/images/folio/smashpets/portfolio-item-02.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor </p>
+                    <p>Subatle animations were added with animate.css.</p>
                     <div class="slider-numbers">2 / 3</div>
                 </div>
             </div>
@@ -888,7 +889,7 @@
             <div class="slides8 slider-fade">
                 <img src="assets/images/folio/smashpets/portfolio-item-03.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>Standard contact form. Forms are sent to the clients cellphone via SMS.</p>
                     <div class="slider-numbers">3 / 3</div>
                 </div>
             </div>
@@ -918,7 +919,7 @@
             <div class="slides9 slider-fade">
                 <img src="assets/images/folio/nasaAPI/portfolio-item.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>This site was created using the APOD API from NASA. I created it while learning JavaScript. Favourites are saved in Local Storage.</p>
                     <div class="slider-numbers">1 / 1</div>
                 </div>
             </div>
@@ -943,7 +944,7 @@
             <div class="slides10 slider-fade">
                 <img src="assets/images/folio/paint-clone/portfolio-item.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>A basic MS Paint clone also created while learning JS and uses HTML Canvas.</p>
                     <div class="slider-numbers">1 / 1</div>
                 </div>
             </div>
@@ -961,7 +962,6 @@
             <!-- Slider Nav -->
             <div class="slider-social">
                 <a aria-label="Link to live website" href="https://www.realtorsonline.ca" target="_blank" title="Live Site"><i class="fa fa-globe"></i></a>
-                <a aria-label="My Github link" href="https://github.com/Spielbergo/realtorsonline" target="_blank" title="Github"><i class="fab fa-github"></i></a>
                 <span><i class="fa fa-times-circle close" title="Close Window"></i></span>
             </div>
 
@@ -969,7 +969,7 @@
             <div class="slides11 slider-fade">
                 <img src="assets/images/folio/realtorsonline/portfolio-item-01.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>Realtorsonline was the precursor to the Jen Jewell site. It was orginially a WordPress site but again it was very slow. I removed Bootstrap and Genesis frameworks and recreated the exact site from scratch using only HTML and CSS with some JS.</p>
                     <div class="slider-numbers">1 / 3</div>
                 </div>
             </div>
@@ -978,7 +978,7 @@
             <div class="slides11 slider-fade">
                 <img src="assets/images/folio/realtorsonline/portfolio-item-02.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor </p>
+                    <p>Code was not included as multiple developers have worked on this site.</p>
                     <div class="slider-numbers">2 / 3</div>
                 </div>
             </div>
@@ -987,7 +987,7 @@
             <div class="slides11 slider-fade">
                 <img src="assets/images/folio/realtorsonline/portfolio-item-03.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p></p>
                     <div class="slider-numbers">3 / 3</div>
                 </div>
             </div>
@@ -1017,7 +1017,7 @@
             <div class="slides12 slider-fade">
                 <img src="assets/images/folio/organizethis/portfolio-item-01.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p>This was the third site I had done for a client. It was made using stock photos and a Bootstrap template.</p>
                     <div class="slider-numbers">1 / 3</div>
                 </div>
             </div>
@@ -1026,7 +1026,7 @@
             <div class="slides12 slider-fade">
                 <img src="assets/images/folio/organizethis/portfolio-item-02.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor </p>
+                    <p>I added a before and after feature to the template.</p>
                     <div class="slider-numbers">2 / 3</div>
                 </div>
             </div>
@@ -1036,7 +1036,7 @@
                 <div class="slider-social">
                 <img src="assets/images/folio/organizethis/portfolio-item-03.jpg" alt="">
                 <div class="slider-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed omnis unde, odio deserunt, quis adipisci quam natus impedit est laboriosam suscipit eum vero, vitae quas aliquid pariatur? Vero, aspernatur?</p>
+                    <p></p>
                     <div class="slider-numbers">3 / 3</div>
                 </div>
             </div>
@@ -1060,7 +1060,7 @@
     <script src="assets/js/logo-slider.js"></script>
 
     <!-- Form Validation -->
-    <script src="assets/js/validate.js"></script>
+    <!-- <script src="assets/js/validate.js"></script> -->
 
     <!-- Main Script -->
     <script src="script.js"></script>

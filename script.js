@@ -8,12 +8,14 @@ function navToggle() {
     var toggle = document.getElementById('navbarItems');
     if (toggle.style.opacity === "1") {
         toggle.style.opacity = "0";
+        toggle.style.display = "flex";
       } else {
         toggle.style.opacity = "1";
+        toggle.style.display = "block";
       }
 }
 
-// Nav Highlight on Scroll 
+// // Nav Highlight on Scroll 
 // Credit: Danilo Bilanoski
 // https://codepen.io/dbilanoski/pen/LabpzG
 // Get all sections that have an ID defined
