@@ -4,16 +4,43 @@ window.addEventListener('load',function(){
 });
 
 // Mobile Nav Toggle
-function navToggle() {
-    var toggle = document.getElementById('navbarItems');
-    if (toggle.style.opacity === "1") {
-        toggle.style.opacity = "0";
-        toggle.style.display = "flex";
-      } else {
-        toggle.style.opacity = "1";
-        toggle.style.display = "block";
-      }
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.getElementById("navbarItems");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("mobile-active");
 }
+// Close Menu on item click
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("mobile-active");
+}
+
+// function navToggle() {
+//   var x = document.getElementById("navbarItems");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
+
+// const mobileMenu = document.getElementById('navBarItems');
+
+// function mobileNav() {
+//   if (mobileMenu.style.display === 'block') {
+//     mobileMenu.style.display = 'none';
+//   } else {
+//     mobileMenu.style.display = 'block';
+//   }
+// }
 
 // // Nav Highlight on Scroll 
 // Credit: Danilo Bilanoski
