@@ -3,7 +3,17 @@ window.addEventListener('load',function(){
   document.querySelector('body').classList.add("loaded")  
 });
 
-// Mobile Nav Toggle
+// Mobile Nav Title Bar appears on scroll
+const navbar = document.querySelector('.mobile-nav-container');
+window.onscroll = () => {
+    if (window.scrollY > 300) {
+        navbar.classList.add('mobile-nav-container-scroll');
+    } else {
+        navbar.classList.remove('mobile-nav-container-scroll');
+    }
+};
+
+// Mobile Nav Toggle <- Small glitch here FIX IT!
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.getElementById("navbarItems");
 
@@ -12,7 +22,11 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("mobile-active");
+    if (window.scrollY < 300) {
+        navbar.classList.add('mobile-nav-container-scroll');
+    } 
 }
+
 // Close Menu on item click
 const navLink = document.querySelectorAll(".nav-link");
 
@@ -22,25 +36,6 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("mobile-active");
 }
-
-// function navToggle() {
-//   var x = document.getElementById("navbarItems");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
-
-// const mobileMenu = document.getElementById('navBarItems');
-
-// function mobileNav() {
-//   if (mobileMenu.style.display === 'block') {
-//     mobileMenu.style.display = 'none';
-//   } else {
-//     mobileMenu.style.display = 'block';
-//   }
-// }
 
 // // Nav Highlight on Scroll 
 // Credit: Danilo Bilanoski

@@ -143,11 +143,47 @@ hr {
 
 /* -- NAVIGATION -- */
 /* Main Nav */
+.mobile-nav-container {
+    display: flex;
+    align-self: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1005;
+    background: transparent;
+    border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+.mobile-nav-container img {
+    display: none;
+    position: relative;
+    z-index: 1015;
+    padding: 10px;
+}
+
+.mobile-nav-container p {
+    display: none;
+    height: 60px;
+}
+
+.mobile-nav-container-scroll {
+    background-color: #222;
+    box-shadow: 5px 5px 5px #333;
+    transition-duration: .5s;
+}
+
+.mobile-nav-container-scroll img,
+.mobile-nav-container-scroll p {
+    display: flex;
+    align-items: center;
+    transition-duration: .5s;
+}
+
 .hamburger {
     position: fixed;
     top: 15px;
     right: 15px;
-    z-index: 1000;
+    z-index: 1003;
     display: block;
     cursor: pointer;
 }
@@ -174,14 +210,39 @@ hr {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* .mobile-toggle {
+.navbar-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     position: fixed;
-    bottom: 8px;
-    left: 83%;
-    z-index: 1000;
-    font-size: 30px;
-    width: 30px;
-} */
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    padding: 90px 0 20px;
+    background-color: var(--bg-color);
+    text-transform: uppercase;
+    visibility: hidden;
+    width: 0;
+    opacity: 1;
+} 
+
+.mobile-active {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    transition-duration: .5s;
+}
+
+.navbar-items li {
+    margin: 10px 15px;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+.nav-logo {
+    display: none;
+}
 
 .nav-active {
     color: var(--hover-color);
@@ -195,45 +256,12 @@ hr {
 }
 
 .contact-icons i {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .nav-divider {
     margin-top: 15px;
-}
-
-.navbar-items {
-    display: flex;
-    flex-direction: column;
-    background: #222;
-    position: fixed;
-    top: 29px;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    padding: 40px 0 20px;
-    background-color: var(--bg-color);
-    border-top: 1px solid grey;
-    text-transform: uppercase;
-}
-
-.navbar-items {
-    display: none;
-} 
-
-.mobile-active {
-    display: block;
-}
-
-.navbar-items li {
-    margin: 10px 15px;
-    text-align: center;
-    background-color: var(--bg-color);
-}
-
-.nav-logo {
-    display: none;
 }
 
 /* -- HEADER -- */
@@ -405,7 +433,6 @@ h2 {
     margin-top: 30px;
     margin-bottom: 50px;
 }
-
 
 /* Testimonials */
 .wrapper{
@@ -598,6 +625,7 @@ section.portfolio {
     flex-direction: column;
     transition: .5s ease;
     opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -620,6 +648,7 @@ section.portfolio {
 
 .folio-item:hover .folio-overlay {
     opacity: 1;
+    visibility: visible;
 }
 
 .show-folio-item {
@@ -706,7 +735,7 @@ section.contact {
 }
 
 .contact-social-icons a {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 /* Contact Section - FORM */
@@ -741,6 +770,7 @@ label {
     display: inline-flex;
     cursor: pointer;
     position: relative;
+    margin-top: 10px;
 }
 
 .form-checkbox > span {
@@ -985,11 +1015,12 @@ footer p {
     .contact-icons {
         position: fixed;
         top: 20px;
-        right: 20px;
+        right: 0;
         z-index: 1000;
         font-size: 30px;
         background-color: transparent;
         margin-top: 0;
+        padding-right: 20px;
     }
 
     .contact-icons i {
@@ -1008,20 +1039,28 @@ footer p {
         height: 50px;
         padding: 40px 0;
         opacity: .9 !important;
+        border-top: 1px solid grey;
         border-bottom: 1px solid grey;
+        visibility: visible;
+        width: 100%;
     }
 
     .navbar-items li {
         background-color: transparent;
     }
-
+     
+    .nav-logo,
+    .nav-link {
+        position: relative;
+        right: 20px;
+    }
     .nav-logo {
         display: flex;
         padding: 0;
     }
 
-    .mobile-toggle {
-        display: none;
+    .mobile-nav-container {
+        visibility: hidden;
     }
 
     .nav-divider {
@@ -1057,11 +1096,12 @@ footer p {
     }
 
     .resume-text {
-        padding-top: 125px;
+        padding-top: 55px;
     }
 
     .resume-button {
         text-align: left;
+        margin-top: 40px;
     }
 
     .language-list {

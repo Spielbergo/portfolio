@@ -1,9 +1,9 @@
 .loader-wrapper {
     --line-width: 5px;
     --curtain-color: #333;
-    --outer-line-color: #a8dadc;
-    --middle-line-color: #457b9d;
-    --inner-line-color: #1d3557;
+    --outer-line-color: #dca8a8;
+    --middle-line-color: #aa4e4e;
+    --inner-line-color: #e00000;
     position:fixed;
     top:0;
     left:0;
